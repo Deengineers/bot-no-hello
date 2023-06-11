@@ -41,6 +41,12 @@ To get started with No-Hello-Bot, you'll need to add it to your Discord server.
 
 Once you've set up the words you'd like the bot to recognize, it will start responding to them with fun gifs. Enjoy!
 
+## How to Run
+
+```sh
+go run cmd/discord-bot-go.go
+```
+
 ## Libraries
 
 No Hello Bot for Discord was built using the Go libraries listed in go.mod
