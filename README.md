@@ -41,11 +41,28 @@ To get started with No-Hello-Bot, you'll need to add it to your Discord server.
 
 Once you've set up the words you'd like the bot to recognize, it will start responding to them with fun gifs. Enjoy!
 
-## How to Run
+## How to run bot locally (with from app)
 
-```sh
-go run cmd/discord-bot-go.go
-```
+Pre-requisites:
+
+- Make sure to have Golang installed.
+
+1. Get your token ready into `docs/config.json`
+2. `go run cmd/discord-bot-go.go`
+
+## How to run bot locally (using containers - Docker)
+
+Pre-requisites:
+
+- Make sure to have Docker installed.
+
+1. Build image using Dockerfile >> `docker build -t nohello Dockerfile`
+2. Run container using `docker run nohello`
+
+## Run bot with env vars
+
+- `export TOKEN=<PUT_TOKEN_HERE>`
+- `go run cmd/discord-bot-go.go`
 
 ## Libraries
 
